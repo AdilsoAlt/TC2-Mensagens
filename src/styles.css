@@ -1,1 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'bulma/css/bulma.css';
+h1{
+    text-align: center;
+    margin: 25px;
+    font-size: 2.5rem;
+}

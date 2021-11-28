@@ -1,0 +1,6 @@
+<div *ngFor="let m of listaMensagens" class="field ng-star-inserted">
+  <label class="label">Mensagem postada em {{m.date}}</label>
+  <div class="control">
+    <textarea disabled="" class="textarea has-fixed-size">{{m.text}}</textarea>
+  </div>
+</div>

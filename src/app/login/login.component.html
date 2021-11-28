@@ -1,0 +1,25 @@
+<div class="container is-max-desktop">
+  <div class="columns is-mobile">
+    <div class="column is-three-fifths is-offset-one-fifth">
+      <div class="field">
+        <label class="label">Login</label>
+        <div class="control">
+          <input class="input" [(ngModel)]="dadosLogin.login" type="email" placeholder="exemplo@email.com">
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">Senha</label>
+        <div class="control">
+          <input class="input" [(ngModel)]="dadosLogin.senha" type="password" placeholder="">
+        </div>
+      </div>
+
+      <div class="field is-grouped" style="justify-content: space-between; align-items: center;">
+        <a routerLink="/novo-cadastro"><u>Novo Cadastro</u></a>
+        <div class="control">
+          <button class="button is-link" (click)="entrar()">Entrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

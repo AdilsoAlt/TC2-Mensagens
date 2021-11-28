@@ -1,0 +1,39 @@
+<div class="container">
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-stat">
+        <p>Bem Vindo {{nomeUsuario}} - Esses são seus segredos</p>
+      </div>
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <button class="button is-danger" (click)=sair()>
+              <strong>Sair</strong>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+<div class="container">
+  <div class="columns">
+    <div class="column" style="padding-right:50px">
+      <div class="field">
+        <label class="label">Digite uma mensagem paracadastrar</label>
+        <div class="control">
+          <textarea rows="6" [(ngModel)]="dadosEnvio.texto" placeholder="Digite o texto desejado" maxlength="500"
+            class="textarea has-fixed-size ng-untouched ng-pristine ng-invalid"></textarea>
+        </div>
+      </div>
+      <div class="field is-grouped">
+        <div class="control">
+          <button class="button is-link" (click)=novaMensagem()>Cadastrar</button>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <app-listar-mensagens></app-listar-mensagens>
+    </div>
+  </div>
+</div>

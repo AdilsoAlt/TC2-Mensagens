@@ -1,0 +1,30 @@
+<div class="container is-max-desktop">
+  <div class="columns is-mobile">
+    <div class="column is-three-fifths is-offset-one-fifth">
+      <div class="field">
+        <label class="label">Nome</label>
+        <div class="control">
+          <input [(ngModel)]="novoUsuario.nome" class="input" type="text" placeholder="Nome">
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">Login</label>
+        <div class="control">
+          <input [(ngModel)]="novoUsuario.login" class="input" type="email" placeholder="exemplo@email.com">
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">Senha</label>
+        <div class="control">
+          <input class="input" [(ngModel)]="novoUsuario.senha" type="password" placeholder="">
+        </div>
+      </div>
+      <div class="field is-grouped" style="justify-content: space-between; align-items: center;">
+        <a routerLink=""><u>Voltar</u></a>
+        <div class="control">
+          <button class="button is-link" (click)="cadastrar()">Cadastrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
