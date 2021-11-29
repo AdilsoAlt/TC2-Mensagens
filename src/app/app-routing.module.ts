@@ -5,7 +5,7 @@ import { NovaMensagemComponent } from './nova-mensagem/nova-mensagem.component';
 import { NovoCadastroComponent } from './novo-cadastro/novo-cadastro.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'login', pathMatch: 'full'},
+  { path: '', redirectTo: '/login', pathMatch: 'full'},
   { path: 'login', component: LoginComponent },
   { path: 'novo-cadastro', component: NovoCadastroComponent },
   { path: 'nova-mensagem', component: NovaMensagemComponent }
